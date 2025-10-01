@@ -9,8 +9,8 @@ let bots = 0;
 let botCost = 32;
 
 function updateTexts() {
-    fuelCount.innerText = "You have mined " + fuel + "TJf (terajoules of fossil fuels).";
-    botCount.innerText = "You have " + bots + " worker bot" + (bots!=1 ? "s" : "") + " mining " + bots + "TJf/sec."
+    fuelCount.innerText = `You have mined ${fuel} TJf (terajoules of fossil fuels),`;
+    botCount.innerText  = `You have ${bots} worker bot${bots!=1?"s":""} mining ${bots}TJf/sec.`
 }
 
 function clickFuelmine() {
