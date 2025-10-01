@@ -49,6 +49,9 @@ table {
 
 
 /* default hover effect */
+.map_body {
+	outline: 1px solid red;
+}
 
 .map_main {
 	display: grid;
