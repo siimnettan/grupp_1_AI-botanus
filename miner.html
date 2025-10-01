@@ -8,12 +8,69 @@
     <title>Resource Mining Game</title>
   </head>
   <body>
-    <button id="mineButton" onclick="clickFuelmine()">Mine Fossil fuels</button>
-    <br> <br>
-    <p id="fuelCount">You have mined 0TJf (terajoules of fossil fuels).</p>
-    <br>
-    <p id="botCount">You have 0 worker bots mining 0TJf/sec.</p>
-    <button id="buyBots" onclick="buyBot()">rebuild a worker bot with for 32TJf</button>
-    <script src="miner.js"></script>
+    <header>
+      <!-- Logo -->
+      <div >
+        <a href="index.html">Botanus<a></a>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <a href="news.html">Uudised<a>
+        <a href="map.html">Kaart</a>
+        <a href="profiles.html">Profiilid<a>
+        <a href="miner.html">Support</a>
+      </nav>
+    </header>
+    <main>
+      <br>
+      <button id="mineButton" onclick="clickFuelmine()">Mine Fossil fuels</button>
+      <br> <br>
+      <p id="fuelCount">You have mined 0TJf (terajoules of fossil fuels).</p>
+      <br>
+      <div class="hori">
+        <ul>
+          <p id="botCount">You have 0 other worker bots mining 0TJf/sec.</p>
+          <p id="drillLevel">Your drills currently mine 1TJf per hit.</p>
+        </ul>
+        <ul>
+          <button id="buyBots" onclick="buyBot()">Build a helper worker bot for 32TJf</button>
+          <button id="upgradeDrills" onclick="upgradeDrill()">Upgrade all drills for 32TJf</button>
+        </ul>
+      </div>
+    
+      <script src="miner.js"></script>
+    </main>
+
+    <style>
+      body {
+        background-color: rgb(12, 11, 11);
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      .hori {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      button {
+        font-size: inherit;
+        border-radius: 0;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      ul p, ul button {
+        margin: 1rem;
+      }
+    </style>  
   </body>
 </html>
