@@ -49,11 +49,18 @@ table {
 
 
 /* default hover effect */
+
+.map_main {
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+}
+  
+  
+
 .Button_1 {
   color: black;
   font-weight: bold;
   font-size: 24px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
+  text-align: right;
 }
