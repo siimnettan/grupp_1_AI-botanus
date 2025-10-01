@@ -10,7 +10,7 @@ let botCost = 32;
 
 function updateTexts() {
     fuelCount.innerText = "You have mined " + fuel + "TJf (terajoules of fossil fuels).";
-    botCount.innerText = "You have " + bots + " miner_bot(s) mining " + bots + "TJf/sec."
+    botCount.innerText = "You have " + bots + " worker bot" + (bots!=1 ? "s" : "") + " mining " + bots + "TJf/sec."
 }
 
 function clickFuelmine() {
@@ -22,10 +22,10 @@ function buyBot() {
     if (fuel >= botCost) {
         fuel -= botCost;
         bots++;
-        botCost *= 1.5;
+        botCost = Math.round(botCost * 1.5); 
 
         updateTexts();
-        buyBots.innerText = "Buy a miner_bot for " + botCost + "TJf";
+        buyBots.innerText = "build a worker bot using " + botCost + "TJf";
     }
 }
 
