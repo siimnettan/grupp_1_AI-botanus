@@ -7,7 +7,8 @@
 ### Rollijaotus
 * **Kes kirjutab tekste:**
 * **Kes teeb graafika:** 
-**Kes paneb koodi struktuuri püsti:** 
+* **Kes paneb koodi struktuuri püsti:** 
 
 
 [figma](https://www.figma.com/files/team/1555155921198097188/project/462527644/Team-project?fuid=1555156391311686425)
+[Leht]
