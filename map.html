@@ -22,5 +22,37 @@
         <a href="miner.html">Support</a>
       </nav>
     </header>
+
+    <main class="map-main">
+      <div class="map-container">
+        <img src="./images/image_map.png" alt="Botanus map" class="map-image">
+        <div class="overlay-grid">
+          <div class="grid-item">
+            <span class="grid-label">Area 1</span>
+          </div>
+          <div class="grid-item">
+            <span class="grid-label">Area 2</span>
+          </div>
+          <div class="grid-item">
+            <span class="grid-label">Area 3</span>
+          </div>
+          <div class="grid-item">
+            <span class="grid-label">Area 4</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <style>
+      .map-container { position: relative; width: min(90vw, 800px); margin: 2rem auto; }
+      .map-image { width: 100%; display: block; }
+      .overlay-grid { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); }
+      .grid-item { position: relative; }
+      .grid-label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,0.5); opacity: 0; }
+      .grid-item:hover .grid-label { opacity: 1; }
+    </style>
+        
+          </div>
+    </main>
+
   </body>
 </html>
