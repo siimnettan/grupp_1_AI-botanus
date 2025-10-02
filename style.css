@@ -19,6 +19,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -84,8 +85,13 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+
   padding: 1rem;
-  height: 3rem;
+  height: 5rem;
+  width: 100%;
 
   background-color: #000C;
 
@@ -104,7 +110,12 @@ header {
   color: white;
 }
 
+nav {
+  display: flex;
+}
+
 nav a {
+  padding-left: 2rem;
   background: linear-gradient(90deg, #5AF, #1F0);
   background-clip: text;
 
@@ -128,6 +139,8 @@ nav a:hover, .logo:hover {
 
 /* default styling                                                           */
 body {
+  margin-top: 7rem;
+
   font-family: 'Urbanist';
   background-color: #111;
   color: white;

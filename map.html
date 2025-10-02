@@ -44,16 +44,39 @@
       </div>
     </main>
     <style>
-      .map-container { position: relative; width: min(90vw, 800px); margin: 2rem auto; }
-      .map-image { width: 100%; display: block; }
-      .overlay-grid { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); }
-      .grid-item { position: relative; }
-      .grid-label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; background: rgba(0,0,0,0.5); opacity: 0; }
-      .grid-item:hover .grid-label { opacity: 1; }
-    </style>
-        
-          </div>
-    </main>
+      .map-container {
+        position: relative;
+        width: min(90vw, 800px);
+        margin: 2rem auto;
+      }
+      .map-image {
+        width: 100%; display: block;
+      }
 
+      .overlay-grid {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+      .grid-item {
+        position: relative;
+      }
+      .grid-label {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        color: #fff;
+        background: rgba(0,0,0,0.5);
+        opacity: 0;
+      }
+      .grid-item:hover .grid-label {
+        opacity: 1;
+      }
+    </style>
   </body>
 </html>
