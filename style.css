@@ -47,7 +47,14 @@ table {
   border-spacing: 0;
 }
 
-/*###########################################################################*/
+button {
+  font-size: inherit;
+  border-radius: 0;
+}
+
+/*#############################################################################
+## tools, repeatable elements                                                ##
+#############################################################################*/
 
 .urbanist-semi-bold {
   font-family: "Urbanist", sans-serif;
@@ -56,9 +63,19 @@ table {
   font-style: normal;
 }
 
-/*###########################################################################*/
+.hori {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-/* header */
+
+
+/*#############################################################################
+## content styling                                                           ##
+#############################################################################*/
+
 header {
   display: flex;
   flex-direction: row;
@@ -68,7 +85,7 @@ header {
   padding: 1rem;
   height: 3rem;
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000C;
 
   font-family: 'Urbanist';
 }
@@ -104,4 +121,13 @@ nav a:hover, .logo:hover {
   transition-duration: 500ms;
   transition-property: color;
   color: transparent;
+}
+
+
+
+body {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
 }
