@@ -105,29 +105,3 @@ nav a:hover, .logo:hover {
   transition-property: color;
   color: transparent;
 }
-
-
-
-/* map interaction */
-.map_body {
-  outline: 1px solid red;
-}
-
-.map_body * {
-  outline: 1px solid red;
-}
-
-.map_main {
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-}
-
-
-
-.Button_1 {
-  color: black;
-  font-weight: bold;
-  font-size: 24px;
-
-  text-align: right;
-}
