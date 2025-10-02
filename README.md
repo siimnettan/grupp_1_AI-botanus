@@ -39,7 +39,11 @@ DR-42 – “Worker Bot”
 * **Roll maailmas:** Botanuse selgroog – ilma nendeta ei oleks ei tehaseid, ei armeed, ei uusi roboteid. Nad on Botanuse töömesilased.
 
 * **Kaart või skeem (kasutajale arusaadav maailmaruum).**
+  <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/64561e13-40ca-401d-a3fb-ed322ee0bb4f" />
+
 * **Esimesed “uudised” või sündmused sellest maailmast.**
+  <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/316623e2-ea2b-47be-91f0-89418c276c10" />
+
 
 
 
