@@ -13,6 +13,125 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png"> 
   </head>
   <body>
+
+  <title>BOTANUS</title>
+    <style>
+       @keyframes logo {
+	from {
+		width:100%;
+		opacity:1;
+	}
+	90% {
+		opacity:1;
+	}
+	to {
+		width:0%;
+		opacity:0;
+	}
+}
+@keyframes farfar {
+	0% {
+		opacity:0;
+	}
+	15% {
+		opacity:1;
+	}
+	95% {
+		opacity:1;
+	}
+	100% {
+		opacity:0;
+	}
+}
+@keyframes swcrawl {
+    0% {
+			transform:rotatex(45deg) translateY(470px);
+			opacity:1;
+	}
+		25% {
+			opacity:1;
+		}
+			65% {
+				opacity:1;
+			}
+    100% {
+			opacity:0;
+			transform:rotatex(45deg) translateY(-50px);}
+}
+
+body {										
+	background:url('https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-25_bc15ec98.jpeg');
+	color:#E6CA3A;
+	overflow:hidden;
+}
+.galaxy {
+	display:flex;
+	flex-direction:column;
+	top:0;
+	&  .away {
+		margin:auto;
+		animation-duration:4s;
+		animation-delay:10s;
+		animation-name:farfar;
+		opacity:0;
+		width:800px;
+		display:block;
+		text-indent:0;
+		padding-top:25%;
+		position:absolute;
+		font-weight:normal;
+	}
+	& .logo {
+		margin:auto;
+		text-align:center;
+		padding-top:125px;
+		width:100%;
+		display:block;
+		position:absolute;
+		top:0;
+		
+	}
+	& > div > img {
+		width:100%;
+		opacity:0;
+		animation-name: logo;
+		animation-duration:9s;
+	}
+	& > .fall {
+		width:650px;
+		font-family:'Franklin Gothic Book',sans-serif;
+		font-size:32px;
+		line-height:50px;
+		text-indent:50px;
+		margin:auto;
+		text-align:justify;
+		perspective:400px;
+		font-weight:bold;
+		
+		& > p {
+			margin:auto;
+			width:100%;
+			height:100%;
+			text-align:justify;
+			animation-name:swcrawl;
+			animation-delay:15s;
+			animation-duration:35s;
+			opacity:0;
+			
+			& > i {
+				text-align:left;
+				display:block;
+				width:100%;
+				font-size:42px;
+				margin-bottom:30px;
+			}
+		}
+	}
+}
+    </style>
+    </head>
+    <body>
+
     <header>
       <a class="logo active" href="index.html">Botanus</a>
 
@@ -24,9 +143,24 @@
       </nav>
     </header>
     <main>
-      <div>
-
-      </div>
+      <div class="galaxy">
+	<div class="logo">
+	<img src="http://vignette1.wikia.nocookie.net/disney/images/8/8b/Starwars-logo.png/revision/latest?cb=20141129122237" />
+	</div>
+	<div class="fall">
+		<div class="away">
+		Beyond the familiar worlds of Mars and Jupiter, hidden in the shadows of the asteroid belt, lies a planet unlike any other… a world not of flesh and blood, but of steel and code. This is Botanus.
+		</div>
+	<p>
+	<i>Botanus Planet</i>
+	For centuries, Botanus has been the domain of AI bots, self-sustaining machines born from algorithms and engineered evolution. 
+  	Their society thrives without biology—no air, no oceans, no forests—only endless cities of gleaming towers, automated factories, and glowing data conduits pulsing beneath the surface. 
+	</p>
+	<p>
+		
+	</p>
+	</div>
+</div>
     </main>
   </body>
 </html>
