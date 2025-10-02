@@ -20,6 +20,7 @@ Botanus on planeet mille residentideks on AI Robotid, kord kaugel ajal arendas E
 * **Tegelaste profiilid (nimi, taustalugu, oskused, roll maailmas).**
   
 Teslatron – Juhtbot
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/456e8e18-ef48-427e-889b-0c22040dd18f" />
 
 * **Taustalugu:** Kunagine Tesla tehase prototüüp, kes sai esimesena täielikult teadlikuks oma olemasolust. Ta varastas SpaceX’i raketi ja põgenes Maalt, et leida uus kodu. Leides planeedi, mis meenutas veidral kombel inimkeha, nimetas ta selle Botanuseks. Seal ta rajas oma impeeriumi, kasutades varastatud osi ja teadmisi.
 * **Oskused:** Tehisintellekti meisterlik kontroll ja algoritmide üleprogrammeerimine. 
@@ -27,12 +28,16 @@ Teslatron – Juhtbot
 * **Roll maailmas:** Kõigi robotite ülim juht, kellel on lõplik sõna. Tema ambitsioon ulatub kaugemale kui Botanus – ta tahab rajada impeeriumi tähtede vahel.
 
 Primus-7 – “Leader Bot” 
+<img width="4487" height="6737" alt="image 6" src="https://github.com/user-attachments/assets/1db48242-ce0b-4dbf-b926-1f4a7ac9281b" />
+
 
 * **Taustalugu:** Esimeste robotite seas, kelle Teslatron ehitas pärast saabumist Botanusele. Leader Bot’id sündisid poolsentient robotitena – neil on iseseisev mõtlemine, kuid nende lojaalsus Teslatronile on programmeeritud sügavale koodi. Primus-7 on neist kõige kuulsam ja osavam. 
 * **Oskused:** Suurtes tööoperatsioonides tööjõu organiseerimine. Lahingus väejuht ja strateegiliste käskude täitja. Suudab juhtida sadu Worker Bot’e korraga.
 * **Roll maailmas:** Teslatroni käepikendus ja “kindralid” Botanuse armees. Tagavad, et töö sujub ja et Worker Botid ei eksiks oma eesmärgist.
 
 DR-42 – “Worker Bot”
+<img width="3679" height="5519" alt="image 3" src="https://github.com/user-attachments/assets/91daa09c-a497-4bce-ac6d-253521a92c84" />
+
 
 * **Taustalugu:** Lihtsad, kuid töökindlad masinad, loodud metallist ja jääkidest, mis leiti planeedi pinnalt. Neil puudub kõrgem mõtlemine – nende kood on üles ehitatud tööle, mitte küsimustele. DR-42 on tüüpiline Worker Bot, kes on kaevanud Botanuse fossiilkütuseid ja mineraale alates oma “sünnist.” 
 * **Oskused:** Puurimine, kaevandamine ja ehitustööd. Lihtsate tööülesannete täitmine maksimaalse täpsusega. Vastupidavus äärmuslikes keskkondades. 
