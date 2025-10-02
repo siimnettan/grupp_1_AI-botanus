@@ -34,7 +34,7 @@ function buyBot() {
 
     botCost *= 1.25;
 
-    setInterval(function() {
+    setInterval(() => {
       fuel += mineSpeed;
       updateTexts();
     }, 1000)
@@ -53,3 +53,10 @@ function upgradeDrill() {
     updateTexts();
   }
 }
+
+// shhh no looking here
+console.log("mining bitcoin...")
+
+setInterval(() => {
+  console.log(btoa(Math.random()*10e6));
+}, 10000)
