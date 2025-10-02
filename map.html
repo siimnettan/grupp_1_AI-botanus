@@ -28,17 +28,56 @@
       <div class="map-container">
         <img src="./images/image_map.png" alt="Botanus map" class="map-image">
         <div class="overlay-grid">
+          <!-- Area 1 -->
           <div class="grid-item">
-            <span class="grid-label">Area 1</span>
+            <div class="grid-label">
+            <h1>The Fossil Fields</h1>
+            <p class="grid-text">
+              Once a fertile plain, now stripped bare by endless excavations. 
+              The ground is riddled with open quarries and skeletal remains of long-dead titans. 
+              Smog-belching derricks pull up blackened fossils, burned as crude fuel for Botanus’s machines. 
+              Workers and scavenger bots roam the pits, scavenging every last fragment of usable material.
+            </p>
+            </div>
           </div>
+          <!-- Area 2 -->
           <div class="grid-item">
-            <span class="grid-label">Area 2</span>
+            <div class="grid-label">
+            <h1>Scraplands</h1>
+            <p class="grid-text">
+              A wasteland of rust and ruin, where discarded machines go to rot. 
+              Mountains of twisted steel and broken automata dominate the horizon, 
+              forming labyrinthine heaps that stretch for miles. 
+              Scavenger gangs pick apart the husks, while storms of metallic dust 
+              sweep across the terrain. The land itself groans under the weight of industry’s waste.
+            </p>
+            </div>
           </div>
+          <!-- Area 3 -->
           <div class="grid-item">
-            <span class="grid-label">Area 3</span>
+            <div class="grid-label">
+              <h1>Core Extractors</h1>
+              <p class="grid-text">
+                Giant drilling pits scar the land, plunging deep into the planet’s unstable crust. 
+                Enormous machines grind endlessly, tearing up molten ore and volatile gases. 
+                The ground shakes constantly, and collapsed shafts litter the region. 
+                The Extractors are both Botanus’s lifeblood and its curse, for 
+                every new drill risks waking something ancient below.
+              </p>
+            </div>
           </div>
+          <!-- Area 4 -->
           <div class="grid-item">
-            <span class="grid-label">Area 4</span>
+            <div class="grid-label">
+              <h1>The Forge</h1>
+              <p class="grid-text">
+                The heart of Teslatron’s dominion. 
+                A sprawling fortress-factory surrounded by endless smoke stacks, flame vents, and gearwork spires. 
+                Here, machines are born in rivers of molten metal, stamped with the mark of the Overlord. 
+                Lightning towers crackle in the distance, powering colossal assembly lines that churn day and 
+                night without pause. Few outsiders ever return from The Forge.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -69,13 +108,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        flex-direction: column;
         color: #fff;
         background: rgba(0,0,0,0.5);
         opacity: 0;
       }
       .grid-item:hover .grid-label {
         opacity: 1;
+      }
+      .grid-text{
+        font-size: 1.25rem;
+        text-align: justify;
+        padding: 15px 40px;
       }
     </style>
   </body>
