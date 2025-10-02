@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1.25;
+  line-height: 1;
 }
 ol, ul {
   list-style: none;
@@ -146,4 +146,39 @@ body {
   color: white;
   text-align: center;
   font-size: 2rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+
+  margin-bottom: 0.618em;
+}
+
+h2 {
+  font-size: 4rem;
+  text-decoration: underline;
+  text-underline-offset: .1em;
+  text-decoration-thickness: .1em;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+  color: #ddd;
+
+  margin-bottom: 0.618em;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+  color: #ddd;
+
+  margin-bottom: 0.618em;
 }
