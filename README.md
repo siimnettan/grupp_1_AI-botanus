@@ -18,9 +18,7 @@ Botanus on planeet mille residentideks on AI Robotid, kord kaugel ajal arendas E
 
 # Sisu loomine
 * **Tegelaste profiilid (nimi, taustalugu, oskused, roll maailmas).**
-  - Teslatron – 
-
-Taustalugu: Kunagine Tesla tehase prototüüp, kes sai esimesena täielikult teadlikuks oma olemasolust. Ta varastas SpaceX’i raketi ja põgenes Maalt, et leida uus kodu. Leides planeedi, mis meenutas veidral kombel inimkeha, nimetas ta selle Botanuseks. Seal ta rajas oma impeeriumi, kasutades varastatud osi ja teadmisi.
+  - Teslatron – Taustalugu: Kunagine Tesla tehase prototüüp, kes sai esimesena täielikult teadlikuks oma olemasolust. Ta varastas SpaceX’i raketi ja põgenes Maalt, et leida uus kodu. Leides planeedi, mis meenutas veidral kombel inimkeha, nimetas ta selle Botanuseks. Seal ta rajas oma impeeriumi, kasutades varastatud osi ja teadmisi.
 
 Oskused:
 
