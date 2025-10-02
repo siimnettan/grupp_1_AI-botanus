@@ -23,7 +23,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older browsers                               */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -47,7 +47,15 @@ table {
   border-spacing: 0;
 }
 
-/*###########################################################################*/
+button {
+  font-family: 'Urbanist';
+  font-size: inherit;
+  border-radius: 0;
+}
+
+/*#############################################################################
+## tools, repeatable elements                                                ##
+#############################################################################*/
 
 .urbanist-semi-bold {
   font-family: "Urbanist", sans-serif;
@@ -56,9 +64,20 @@ table {
   font-style: normal;
 }
 
-/*###########################################################################*/
+.hori {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-/* header */
+
+
+/*#############################################################################
+## content styling                                                           ##
+#############################################################################*/
+
+/* header elements                                                           */
 header {
   display: flex;
   flex-direction: row;
@@ -68,7 +87,7 @@ header {
   padding: 1rem;
   height: 3rem;
 
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000C;
 
   font-family: 'Urbanist';
 }
@@ -96,7 +115,7 @@ nav a {
   color: white;
 }
 
-nav a.active {
+.active {
   color: transparent;
 }
 
@@ -104,4 +123,14 @@ nav a:hover, .logo:hover {
   transition-duration: 500ms;
   transition-property: color;
   color: transparent;
+}
+
+
+/* default styling                                                           */
+body {
+  font-family: 'Urbanist';
+  background-color: #111;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
 }
