@@ -26,9 +26,85 @@
     </header>
     
     <!-- SIIM OSA -->
-    <main class="news-main">
+    <main>
       <div class="news-container">
+        <div>
+          <h1 class="news-header">NEWS</h1>
+        </div>
+        <div>
+          <div class="news-story">
+            <!-- News pildid -->
+            <img src="./images/image_news.png" alt="News in case of blackness" class="news-picture"></img>
+            
+            <!-- News tekst 1 -->
+            <div class ="news-text-box">
+              <h2 class="news-text-header">Lorem, ipsum dolor.1</h2>
+              <p class="news-text-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore unde ad quia repellendus error optio deleniti ipsum accusantium nam quam?</p>
+            </div>
+
+            <!-- News tekst 2 -->
+            <div class ="news-text-box">
+              <h2 class="news-text-header">Lorem, ipsum dolor.2</h2>
+              <p class="news-text-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore unde ad quia repellendus error optio deleniti ipsum accusantium nam quam?</p>
+            </div>
+            
+            <!-- News tekst 3 -->
+            <div class ="news-text-box">
+              <h2 class="news-text-header">Lorem, ipsum dolor.2</h2>
+              <p class="news-text-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore unde ad quia repellendus error optio deleniti ipsum accusantium nam quam?</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
     </main>
+    <style>
+      .news-container {
+
+      }
+
+      .news-header{
+        font-size: 5rem;
+        padding: 15px 40px;
+      }
+
+      .news-story{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+	      /*max-width: 400px; */
+        margin: 200px ;
+      }
+
+      .news-picture{
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .news-text-box{
+        /* taus heledamaks tekstile kast */
+        background-color: rgb(36, 35, 35);
+      }
+
+      .news-text-header{
+        /* vb pole vaja muuta */
+      }
+
+      .news-text-text{
+        font-size: 1.25rem;
+        text-align: justify;
+        padding: 15px 40px;
+      }
+
+      .news-overlay-grid {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    </style>
   </body>
 </html>
