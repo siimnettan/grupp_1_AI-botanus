@@ -72,7 +72,7 @@
             <div class="grid-label">
               <h1>The Forge</h1>
               <p class="grid-text">
-                The heart of Teslatron’s dominion. 
+                The heart of Teslatron’s dominion. <br>
                 A sprawling fortress-factory surrounded by endless smoke stacks, flame vents, and gearwork spires. 
                 Here, machines are born in rivers of molten metal, stamped with the mark of the Overlord. 
                 Lightning towers crackle in the distance, powering colossal assembly lines that churn day and 
@@ -113,14 +113,17 @@
         color: #fff;
         background: rgba(0,0,0,0.5);
         opacity: 0;
+        transition-duration: 500ms;
       }
       .grid-item:hover .grid-label {
         opacity: 1;
+        transition-duration: 500ms;
       }
       .grid-text{
         font-size: 1.25rem;
-        text-align: justify;
+        text-align: left;
         padding: 15px 40px;
+        color: #ddd;
       }
     </style>
   </body>
