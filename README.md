@@ -56,7 +56,7 @@ DR-42 – “Worker Bot”
 <img width="4080" height="3060" alt="20251002_visuaalne_inspiratsioon" src="https://github.com/user-attachments/assets/517d6736-d029-4733-98ba-7d842f184545" />
 
 
-# löpp
+# lõpp
 <img width="603" height="214" alt="20251002_löpp" src="https://github.com/user-attachments/assets/62c9f3e4-1e65-419e-b23c-fc05ea010f39" />
 
 
