@@ -53,12 +53,11 @@ DR-42 – “Worker Bot”
 ## Päev 3 – wrap it up
 # Vahepeal kontseptsiooni käsitsi väljendamine
 
-<img width="1280" height="1010" alt="image" src=url(./images/20251002_visuaalne_inspiratsioon.png) />
 
+<img width="4080" height="3060" alt="20251002_visuaalne_inspiratsioon" src="https://github.com/user-attachments/assets/bcbd7f98-83be-4f8f-b51d-915aaba0d86a" />
 
 # löpp
-
-<img width="1280" height="1010" alt="image" src=url(./images/20251002_löpp.png) />
+<img width="603" height="214" alt="20251002_löpp" src="https://github.com/user-attachments/assets/62c9f3e4-1e65-419e-b23c-fc05ea010f39" />
 
 
 [figma](https://www.figma.com/files/team/1555155921198097188/project/462527644/Team-project?fuid=1555156391311686425)
