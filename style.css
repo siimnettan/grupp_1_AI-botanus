@@ -221,5 +221,5 @@ ul {
 }
 
 html {
-  font-size: clamp(8px, .8vw, 20px);
+  font-size: .8vw;
 }
