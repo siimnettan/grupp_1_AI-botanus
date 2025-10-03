@@ -219,3 +219,7 @@ ul {
     display: block;
   }
 }
+
+html {
+  font-size: .8vw;
+}
