@@ -182,3 +182,40 @@ ul {
 
   margin-bottom: 0.618em;
 }
+
+/*##############################################################################
+## mobile support                                                             ##
+##############################################################################*/
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  nav {
+    position: absolute;
+    top: 5rem; /* below header */
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #000C;
+    display: none; /* hidden by default */
+  }
+
+  nav.open {
+    display: flex; /* shown when active */
+  }
+
+  nav a {
+    padding: 1rem 2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

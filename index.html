@@ -146,6 +146,10 @@
     <header>
       <a class="logo active" href="index.html">Botanus</a>
 
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+
       <nav>
         <a href="news.html">News</a>
         <a href="map.html">Map</a>
@@ -240,6 +244,13 @@
         const seconds = crawlHeight / 20;
 
         crawl.style.animationDuration = seconds + "s";
+      });
+
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('header nav');
+
+      menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
       });
     </script>
   </body>
