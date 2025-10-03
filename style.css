@@ -89,8 +89,8 @@ header {
   z-index: 1;
   top: 0;
 
-  padding: 1rem;
-  height: 5rem;
+  padding: 1em;
+  height: 5em;
   width: 100%;
 
   background-color: #000C;
@@ -139,7 +139,7 @@ nav a:hover, .logo:hover {
 
 /* default styling                                                           */
 body {
-  margin-top: 7rem;
+  margin-top: 7em;
 
   font-family: 'Urbanist';
   background-color: #111;
@@ -189,7 +189,7 @@ ul {
 
 .menu-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 2em;
   background: none;
   border: none;
   color: white;
@@ -197,9 +197,13 @@ ul {
 }
 
 @media (max-width: 800px) {
+  header {
+    font-size: 200%;
+  }
+
   nav {
     position: absolute;
-    top: 5rem; /* below header */
+    top: 5em; /* below header */
     left: 0;
     right: 0;
     flex-direction: column;
@@ -212,7 +216,7 @@ ul {
   }
 
   nav a {
-    padding: 1rem 2rem;
+    padding: 1em 2em;
   }
 
   .menu-toggle {
