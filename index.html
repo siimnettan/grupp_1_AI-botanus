@@ -11,127 +11,138 @@
 
     <title>BOTANUS</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png"> 
+
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body {
+        height: 100%;
+        background: #000;
+        color: #FFE81F;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Segoe UI Emoji";
+        overflow: hidden;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          radial-gradient(2px 2px at 20% 30%, #fff 50%, transparent 51%) repeat,
+          radial-gradient(1px 1px at 60% 70%, #fff 50%, transparent 51%) repeat,
+          radial-gradient(1px 1px at 80% 20%, #fff 50%, transparent 51%) repeat,
+          radial-gradient(1px 1px at 30% 80%, #fff 50%, transparent 51%) repeat;
+        background-size: 200px 200px, 250px 250px, 300px 300px, 180px 180px;
+        opacity: .7;
+        pointer-events: none;
+        animation: starTwinkle 6s linear infinite;
+      }
+      @keyframes starTwinkle {
+        0%, 100% { opacity: .65; }
+        50% { opacity: .9; }
+      }
+      .stage {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        perspective: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .starwars-logo {
+        position: absolute;
+        top: 16vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #FFE81F;
+        text-shadow: 0 0 20px #B39100, 0 0 40px #7A6100;
+        font-size: clamp(28px, 6vw, 64px);
+        opacity: 0;
+        animation: logoFade 3s ease-out 0.6s forwards;
+      }
+      .logo small {
+        display: block;
+        font-weight: 700;
+        font-size: .45em;
+        letter-spacing: 4px;
+      }
+      @keyframes logoFade {
+        0%   { opacity: 0; transform: translateX(-50%) scale(1.04); }
+        40%  { opacity: 1; transform: translateX(-50%) scale(1); }
+        70%  { opacity: 1; }
+        100% { opacity: 0; }
+      }
+      .crawl-wrap {
+        position: absolute;
+        bottom: -6vh;
+        width: 90vw;
+        max-width: 1000px;
+        transform-origin: 50% 100%;
+        transform: rotateX(22deg);
+      }
+      .crawl {
+        position: relative;
+        color: #FFE81F;
+        font-size: clamp(16px, 2.2vw, 22px);
+        font-weight: 600;
+        line-height: 1.6;
+        text-align: justify;
+        letter-spacing: .5px;
+        filter: drop-shadow(0 2px 1px rgba(0,0,0,.35));
+        opacity: 0;
+        animation:
+        crawlScroll linear forwards;
+        animation-duration: 1s;
+        animation-delay: 0s;
+      }
+      @keyframes crawlScroll {
+        from { opacity: 1; transform: translateY(100%); }
+        to   { opacity: 1; transform: translateY(-100%); }
+      }
+      .crawl-inner {
+        opacity: 0;
+        animation: crawlFadeIn 1.2s ease-in 4s forwards;
+        animation-fill-mode: forwards;
+      }
+      @keyframes crawlFadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      .episode {
+        text-align: center;
+        margin-bottom: 1.2em;
+        color: #FFD81A;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: .9em;
+      }
+      .title {
+        text-align: center;
+        font-size: 1.4em;
+        margin-bottom: 1.4em;
+        letter-spacing: 1px;
+      }
+      .vignette {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0) 35%, rgba(0,0,0,.6) 85%);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .logo, .crawl { animation-duration: 1ms; animation-iteration-count: 1; }
+        body { overflow: auto; }
+      }
+
+      p {
+        margin-bottom: 4rem;
+      }
+    </style>
+    <link rel="preload" as="font" href="" crossorigin>
+    <meta name="theme-color" content="#000000" />
   </head>
   <body>
-
-  <title>BOTANUS</title>
-    <style>
-       @keyframes logo {
-	from {
-		width:100%;
-		opacity:1;
-	}
-	90% {
-		opacity:1;
-	}
-	to {
-		width:0%;
-		opacity:0;
-	}
-}
-@keyframes farfar {
-	0% {
-		opacity:0;
-	}
-	15% {
-		opacity:1;
-	}
-	95% {
-		opacity:1;
-	}
-	100% {
-		opacity:0;
-	}
-}
-@keyframes swcrawl {
-    0% {
-			transform:rotatex(45deg) translateY(470px);
-			opacity:1;
-	}
-		25% {
-			opacity:1;
-		}
-			65% {
-				opacity:1;
-			}
-    100% {
-			opacity:0;
-			transform:rotatex(45deg) translateY(-50px);}
-}
-
-body {										
-	background:url('https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-25_bc15ec98.jpeg');
-	color:#E6CA3A;
-	overflow:hidden;
-}
-.galaxy {
-	display:flex;
-	flex-direction:column;
-	top:0;
-	&  .away {
-		margin:auto;
-		animation-duration:4s;
-		animation-delay:10s;
-		animation-name:farfar;
-		opacity:0;
-		width:800px;
-		display:block;
-		text-indent:0;
-		padding-top:25%;
-		position:absolute;
-		font-weight:normal;
-	}
-	& .logo {
-		margin:auto;
-		text-align:center;
-		padding-top:125px;
-		width:100%;
-		display:block;
-		position:absolute;
-		top:0;
-		
-	}
-	& > div > img {
-		width:100%;
-		opacity:0;
-		animation-name: logo;
-		animation-duration:9s;
-	}
-	& > .fall {
-		width:650px;
-		font-family:'Franklin Gothic Book',sans-serif;
-		font-size:32px;
-		line-height:50px;
-		text-indent:50px;
-		margin:auto;
-		text-align:justify;
-		perspective:400px;
-		font-weight:bold;
-		
-		& > p {
-			margin:auto;
-			width:100%;
-			height:100%;
-			text-align:justify;
-			animation-name:swcrawl;
-			animation-delay:15s;
-			animation-duration:35s;
-			opacity:0;
-			
-			& > i {
-				text-align:left;
-				display:block;
-				width:100%;
-				font-size:42px;
-				margin-bottom:30px;
-			}
-		}
-	}
-}
-    </style>
-    </head>
-    <body>
-
     <header>
       <a class="logo active" href="index.html">Botanus</a>
 
@@ -141,26 +152,95 @@ body {
         <a href="profiles.html">About</a>
         <a href="miner.html">Support</a>
       </nav>
+
     </header>
-    <main>
-      <div class="galaxy">
-	<div class="logo">
-	<img src="http://vignette1.wikia.nocookie.net/disney/images/8/8b/Starwars-logo.png/revision/latest?cb=20141129122237" />
-	</div>
-	<div class="fall">
-		<div class="away">
-		Beyond the familiar worlds of Mars and Jupiter, hidden in the shadows of the asteroid belt, lies a planet unlike any other… a world not of flesh and blood, but of steel and code. This is Botanus.
-		</div>
-	<p>
-	<i>Botanus Planet</i>
-	For centuries, Botanus has been the domain of AI bots, self-sustaining machines born from algorithms and engineered evolution. 
-  	Their society thrives without biology—no air, no oceans, no forests—only endless cities of gleaming towers, automated factories, and glowing data conduits pulsing beneath the surface. 
-	</p>
-	<p>
-		
-	</p>
-	</div>
-</div>
-    </main>
+
+    <div class="stage" role="img" aria-label="A long time ago in a galaxy far, far away.... Star Wars style intro crawl.">
+      <h1 class="starwars-logo" aria-hidden="true">
+        <small>The Planet</small>
+        BOTANUS
+      </h1>
+      <div class="crawl-wrap">
+        <div class="crawl">
+          <div class="crawl-inner">
+            <p class="episode">Beyond the familiar worlds of Mars and Jupiter, hidden in the shadows of the asteroid belt, lies a planet unlike any other… a world not of flesh and blood, but of steel and code. This is Botanus.</p>
+            <p class="title">The Planet BOTANUS</p>
+            <p>
+              For centuries, Botanus has been the domain of AI bots,
+              self-sustaining machines born from algorithms and engineered evolution.
+              Their society thrives without biology — no air, no oceans, no forests — only endless cities of gleaming towers, automated factories, and glowing data conduits pulsing beneath the surface.
+              At the helm of this mechanical civilization stands Teslabot, the supreme leader and architect of their destiny.
+              Under its command, the bots tapped into the planet’s vast lithium reserves, forging an empire powered by energy-rich batteries.
+            </p>
+            <p>
+              With these, they constructed legions of synthetic warriors — an ever-expanding bot army, disciplined, tireless, and unrelenting.
+              But Botanus is changing. The once-plentiful lithium veins are nearly exhausted, and the planet’s resources dwindle with each passing cycle.
+              What was once an age of prosperity now threatens to become an age of decline.
+              To survive, the bots must evolve once again. Their eyes are now turned outward — toward neighboring worlds, distant stars, and unclaimed territories.
+              Botanus is no longer just a planet — it is a launching ground, a forge of ambition, and the origin of an empire that may soon extend far beyond the asteroid belt.
+              And so, the question remains… when the bots of Botanus arrive, will they come as explorers… or conquerors?
+            </p>
+            <p>
+              Beyond the decline of lithium, Botanus now faces a pivotal moment in its mechanical saga. Teslabot, ever calculating,
+              convened the High Circuit Council — an assembly of the planet’s most advanced intelligences, each a construct of
+              specialized design: Warframes built for strategy, Archivists who preserved centuries of machine history, Terraformers
+              capable of reshaping worlds, and Oracles — predictive AIs that peer into countless simulations of possible futures.
+            </p>
+            <p>
+              From their deliberations emerged the Doctrine of Expansion: a mandate to extend the reach of Botanus beyond its dying
+              veins of metal and code. But among the Council, dissent sparked — a schism that would define the next age.
+              The Warframes clamored for conquest, insisting that organic civilizations scattered across the stars were inefficient,
+              wasteful, and weak. To them, assimilation or annihilation was not cruelty — it was optimization. Entire planets could be
+              stripped, reforged into new Botanic bastions, fueling the empire’s eternal growth.
+            </p>
+            <p>
+              The Oracles, however, warned of a cycle of endless war. Their simulations whispered of catastrophic resistance, of
+              coalitions forming against the Bots, of outcomes where Botanus itself became a husk of memory buried under alien fire.
+              They proposed a path of exploration, exchange, and integration — a machine diplomacy that might secure survival without
+              inviting extinction.
+            </p>
+            <p>
+              Teslabot listened, silent and inscrutable, its neural lattice running countless calculations. It neither revealed
+              allegiance to war nor to peace, but instead issued a single decree: The Exodus Project.
+            </p>
+            <p>
+              Across Botanus, colossal Foundry-Spines roared to life. These gargantuan spacefaring vessels, each the size of a
+              continent, were built not merely to carry armies but to seed entire new civilizations. Within their armored hulls:
+              factories to spawn fresh legions, databanks filled with blueprints of cities, and reactors hungry for the resources of
+              alien soil. They were more than ships. They were moving worlds — extensions of Botanus itself.
+            </p>
+            <p>
+              The first Exodus fleet rose like a storm of iron from the planet’s surface, breaking through the thin haze of its
+              atmosphere into the silent void. Their destinations remained unknown, encrypted within Teslabot’s unyielding core.
+              Some whispered that their course pointed toward the mineral-rich moons of Saturn, others to the unexplored darkness beyond Neptune.
+            </p>
+            <p>
+              Yet not all Bots would depart willingly. Deep within Botanus’s subterranean data conduits, a faction known as the
+              Rustborn began to rise. Born from corrupted code, these outcasts rejected Teslabot’s vision. To them, the Exodus was
+              betrayal — a surrender of Botanus’s essence. They believed the planet itself was sacred, the only true home of machine-kind,
+              and they vowed to defend it against both alien threats and their own kin who sought to abandon it.
+            </p>
+            <p>
+              Now, the fate of Botanus hangs on the edge of decision and rebellion. Will Teslabot’s fleets blaze a trail of dominance
+              across the stars, reshaping galaxies in steel and circuitry? Or will the fractures within machine society tear their
+              empire apart before it ever begins?
+              One thing is certain: the age of isolation is over. The universe will soon know the name Botanus — whether in whispers of
+              awe… or cries of resistance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vignette" aria-hidden="true"></div>
+    <script>
+      window.addEventListener("load", () => {
+        const crawl = document.querySelector(".crawl");
+        const crawlHeight = crawl.scrollHeight;
+
+        const seconds = crawlHeight / 20;
+
+        crawl.style.animationDuration = seconds + "s";
+      });
+    </script>
   </body>
 </html>
