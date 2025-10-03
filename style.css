@@ -115,7 +115,7 @@ nav {
 }
 
 nav a {
-  padding-left: 2rem;
+  padding-left: 2em;
   background: linear-gradient(90deg, #5AF, #1F0);
   background-clip: text;
 
@@ -221,6 +221,10 @@ ul {
 
   .menu-toggle {
     display: block;
+  }
+
+  body {
+    margin-top: 14em;
   }
 }
 
