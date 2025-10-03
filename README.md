@@ -50,7 +50,19 @@ DR-42 – “Worker Bot”
   <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/316623e2-ea2b-47be-91f0-89418c276c10" />
 
 
+## Päev 3 – wrap it up
+# Vahepeal kontseptsiooni käsitsi väljendamine
+
+<img width="1280" height="1010" alt="image" src=url(./images/20251002_visuaalne_inspiratsioon.png) />
+
+
+# löpp
+
+<img width="1280" height="1010" alt="image" src=url(./images/20251002_löpp.png) />
 
 
 [figma](https://www.figma.com/files/team/1555155921198097188/project/462527644/Team-project?fuid=1555156391311686425)
+[Leht]
+
+[live](https://botanus.neocities.org/)
 [Leht]
